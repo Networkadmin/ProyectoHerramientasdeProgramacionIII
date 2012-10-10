@@ -11,6 +11,10 @@ ALEXANDER RESTREPO <BR/>
 
 vICTOR HURTADO<BR/>
 
+REVISOR<br/>
+
+YEDIR MORENO<br/>
+
 MATERIA
 ---------------------
 
