@@ -1029,11 +1029,14 @@ Ninguno</rem:comments>
 <rem:triggeringEvent>
 El usuario ingresara en la aplicacion</rem:triggeringEvent>
 <rem:precondition>
-<rem:tbd/></rem:precondition>
+el usuario debe tener definido el salario base y  la frecuencia y el dia de corte de cada pago </rem:precondition>
 <rem:postcondition>
 La aplicacion sera iniciada</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
 </rem:frequency>
 <rem:step oid = "STP-0008">
 <rem:number>1</rem:number>
@@ -1114,11 +1117,14 @@ Ninguno</rem:comments>
 <rem:triggeringEvent>
 El usuario ingresa un evento al calendario</rem:triggeringEvent>
 <rem:precondition>
-<rem:tbd/></rem:precondition>
+crear una cuenta</rem:precondition>
 <rem:postcondition>
 El sistema calcula el saldo de la cuenta</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+5
+</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:frequency>
 <rem:step oid = "STP-0013">
 <rem:number>1</rem:number>
@@ -1129,37 +1135,124 @@ solicita al sistema la creacion de un evento</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:step>
-</rem:useCase>
-<rem:useCase
- oid = "UC-0002">
-<rem:name>
-Asignacion de salario a periodo en el calendario</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2012</rem:year>
-<rem:month>10</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 "/>
-<rem:sources stakeholders ="STK-0003 "/>
+<rem:step oid = "STP-0016">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+solicita los detalles del evento </rem:description>
+<rem:performance>
+<rem:value>
+5
+</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:performance>
+</rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance value = "IMV-0002"/>
-<rem:urgency value = "URV-0002"/>
-<rem:status value = "STV-0004"/>
-<rem:stability value = "SBV-0004"/>
-<rem:triggeringEvent>
-El sistema asignara a un periodo determinado el saldo partir del salario base.</rem:triggeringEvent>
-<rem:precondition>
-<rem:tbd/></rem:precondition>
-<rem:postcondition>
-Se mostrara el calendario</rem:postcondition>
-<rem:frequency>
-<rem:tbd/>
-</rem:frequency>
+</rem:step>
+<rem:step oid = "STP-0017">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+ingresa los detalles del evento <br/></rem:description>
+</rem:actorAction>
+<rem:stepException oid = "STX-0010">
+<rem:condition>
+ ingresa un valor del alfabeto, en el campo&quot; valor&quot;</rem:condition>
+<rem:systemAction>
+<rem:description>
+arroja un error diciendo &quot; este campo solo se admiten datos numericos&quot;</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0030">
+<rem:number>4</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+espesifica si el valor del evento  es un egreso o un ingreso</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0020">
+<rem:number>5</rem:number>
+<rem:systemAction>
+<rem:description>
+ solicita la asignacion de una alerta </rem:description>
+<rem:performance>
+<rem:value>
+5
+</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:performance>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0021">
+<rem:number>6</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+asigna la  alerta del evento </rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0023">
+<rem:number>7</rem:number>
+<rem:systemAction>
+<rem:description>
+carga la alerta del evento</rem:description>
+<rem:performance>
+<rem:value>
+5
+</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:performance>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0031">
+<rem:number>8</rem:number>
+<rem:systemAction>
+<rem:description>
+ valida los detalles del evento </rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0011">
+<rem:condition>
+hacen faltan datos </rem:condition>
+<rem:systemAction>
+<rem:description>
+arrojara un mensaje diciendo &quot;no puede continuar hasta que ingrese los datos  completamente&quot;</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0022">
+<rem:number>9</rem:number>
+<rem:systemAction>
+<rem:description>
+guarda los detalles del evento y lo muestra en el calendario</rem:description>
+<rem:performance>
+<rem:value>
+5
+</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:performance>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
 </rem:useCase>
 <rem:useCase
  oid = "UC-0003">
@@ -1185,12 +1278,73 @@ Ninguno</rem:comments>
 <rem:triggeringEvent>
 El usuario ingresa los datos correspondientes a la cuenta (Salario, Frecuencia de pago, Rango(s))</rem:triggeringEvent>
 <rem:precondition>
-<rem:tbd/></rem:precondition>
+inicio de seccion por primera vez</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+depues de cargar la cuenta  el sistema solicitara la asignacion de un evento</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:frequency>
+<rem:step oid = "STP-0025">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+solicita crear una cuenta</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0027">
+<rem:number>2</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+asignara los detalles de la cuenta </rem:description>
+</rem:actorAction>
+<rem:stepException oid = "STX-0012">
+<rem:condition>
+ingresa un valor del alfabeto en el campo &quot; salario base&quot;</rem:condition>
+<rem:systemAction>
+<rem:description>
+arrojara un mensaje diciendo &quot;solo admiten datos numericos&quot; </rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+en el campo de frecuencia viene determinada por dos opciones.&quot;quincenal&quot; o &quot;mensual&quot;</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0032">
+<rem:number>3</rem:number>
+<rem:systemAction>
+<rem:description>
+valida los detalles de la cuenta </rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0013">
+<rem:condition>
+falta algun campo por llenar </rem:condition>
+<rem:systemAction>
+<rem:description>
+arrojara un mensaje diciendo  &quot;necesita llenar todos los campos para poder crear la cuenta&quot;</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0028">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+ carga los detalles de la  cuenta</rem:description>
+</rem:systemAction>
+<rem:comments>
+</rem:comments>
+</rem:step>
 </rem:useCase>
 <rem:useCase
  oid = "UC-0006">
@@ -1216,12 +1370,173 @@ Ninguno</rem:comments>
 <rem:triggeringEvent>
 El sistema calcula el saldo de la cuenta a partir de los eventos creados</rem:triggeringEvent>
 <rem:precondition>
-<rem:tbd/></rem:precondition>
+el salario a favor sera establecido según el salario base y el rango   establecido en la creacion de  cuenta</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+el saldo a favor  se  modifica a partir de los eventos creados</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
 </rem:frequency>
+<rem:step oid = "STP-0029">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+calcula su saldo apartir de los eventos creados</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0007">
+<rem:name>
+vistas de eventos diarios</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2012</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0004"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0004"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+desea ver todos los ventos con la  fecha y valor del evento de manera general </rem:triggeringEvent>
+<rem:precondition>
+por lo menos un evento creado</rem:precondition>
+<rem:postcondition>
+mostrar todos los eventos de manera general </rem:postcondition>
+<rem:frequency>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
+</rem:frequency>
+<rem:step oid = "STP-0033">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+solicitara mostrar vistas </rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0034">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+cargara los eventos existen</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0035">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+escogera el evento que desee ver mas en detalle</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0036">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+cargara  la vista  detalles del evento especificado </rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0008">
+<rem:name>
+consulta de eventos mensuales</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2012</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0004"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0004"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+Consulta de eventos </rem:triggeringEvent>
+<rem:precondition>
+tener un evento creado </rem:precondition>
+<rem:postcondition>
+mostrar el evento especificado  por el usuario</rem:postcondition>
+<rem:frequency>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0005"/>
+</rem:frequency>
+<rem:step oid = "STP-0037">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+solita al sistema consultar eventos</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0038">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+cargara los eventos existentes hasta la fecha</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0039">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+buscar el mes del evento</rem:description>
+</rem:actorAction>
+<rem:comments>
+solo se puede mirar los eventos pasados tres meses de ahy en adelante los eventos seran borrados automaticmanente.</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0041">
+<rem:number>4</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+escogera el evento que desee ver con detalle </rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0042">
+<rem:number>5</rem:number>
+<rem:systemAction>
+<rem:description>
+cargara la vista  detalles del evento especificado</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
 </rem:useCase>
 </rem:section>
 </rem:section>
@@ -1498,6 +1813,18 @@ Hour:minutes:seconds</rem:description>
 <rem:defectStatusValue oid = "DSV-0004">
 <rem:name>eliminado</rem:name>
 </rem:defectStatusValue>
+<rem:defectTypeValue oid = "DTV-0001">
+<rem:name>PD</rem:name>
+<rem:description>
+<![CDATA[Por Determinar]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0002">
+<rem:name>Ambigüedad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
+</rem:description>
+</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0003">
 <rem:name>No necesidad</rem:name>
 <rem:description>
@@ -1516,16 +1843,10 @@ Hour:minutes:seconds</rem:description>
 <![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0002">
-<rem:name>Ambigüedad</rem:name>
+<rem:defectTypeValue oid = "DTV-0006">
+<rem:name>Inconsistencia</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0001">
-<rem:name>PD</rem:name>
-<rem:description>
-<![CDATA[Por Determinar]]>
+<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0007">
@@ -1538,12 +1859,6 @@ Hour:minutes:seconds</rem:description>
 <rem:name>Verbosidad excesiva</rem:name>
 <rem:description>
 <![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0006">
-<rem:name>Inconsistencia</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0009">
