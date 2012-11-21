@@ -1,0 +1,54 @@
+﻿<Payme_Movil:ClasePrincipal xmlns:Payme_Movil="clr-namespace:Payme.Movil" xmlns:System="clr-namespace:System;assembly=mscorlib">
+	<Payme_Movil:ClasePrincipal.Lista>
+		<Payme_Movil:Evento Alerta="Vestibulum aenean maecenas" FechaHora="11/13/2012 19:34:01" Identificador="01" Nombre="Pago de Servicios Publicos" Tipo="Engreso">
+			<Payme_Movil:Evento.Valor>
+				<System:Single/>
+			</Payme_Movil:Evento.Valor>
+		</Payme_Movil:Evento>
+		<Payme_Movil:Evento Alerta="Donec duis quisque" FechaHora="11/13/2012 19:34:01" Identificador="55" Nombre="Phasellus vestibulum etiam" Tipo="Nunc mauris amet fusce ante">
+			<Payme_Movil:Evento.Valor>
+				<System:Single/>
+			</Payme_Movil:Evento.Valor>
+		</Payme_Movil:Evento>
+		<Payme_Movil:Evento Alerta="Arcu vivamus" FechaHora="11/13/2012 19:34:01" Identificador="99" Nombre="Accumsan lorem nullam" Tipo="Morbi aptent nulla proin consequat">
+			<Payme_Movil:Evento.Valor>
+				<System:Single/>
+			</Payme_Movil:Evento.Valor>
+		</Payme_Movil:Evento>
+		<Payme_Movil:Evento Alerta="Diam convallis aliquam bibendum" FechaHora="11/13/2012 19:34:01" Identificador="32" Nombre="Auctor aliquet augue nam eget" Tipo="Elit dignissim">
+			<Payme_Movil:Evento.Valor>
+				<System:Single/>
+			</Payme_Movil:Evento.Valor>
+		</Payme_Movil:Evento>
+		<Payme_Movil:Evento Alerta="Vestibulum sed dis dictumst" FechaHora="11/13/2012 19:34:01" Identificador="42" Nombre="Eleifend blandit commodo elementum" Tipo="Enim facilisi erat">
+			<Payme_Movil:Evento.Valor>
+				<System:Single/>
+			</Payme_Movil:Evento.Valor>
+		</Payme_Movil:Evento>
+		<Payme_Movil:Evento Alerta="Conubia eros cubilia faucibus adipiscing" FechaHora="11/13/2012 19:34:01" Identificador="89" Nombre="Est nibh dapibus" Tipo="Egestas dolor euismod">
+			<Payme_Movil:Evento.Valor>
+				<System:Single/>
+			</Payme_Movil:Evento.Valor>
+		</Payme_Movil:Evento>
+		<Payme_Movil:Evento Alerta="Feugiat hac" FechaHora="11/13/2012 19:34:01" Identificador="20" Nombre="Congue leo mus gravida habitant" Tipo="Facilisis cursus parturient">
+			<Payme_Movil:Evento.Valor>
+				<System:Single/>
+			</Payme_Movil:Evento.Valor>
+		</Payme_Movil:Evento>
+		<Payme_Movil:Evento Alerta="Nec dictum nisi" FechaHora="11/13/2012 19:34:01" Identificador="46" Nombre="Iaculis inceptos lacinia" Tipo="Fermentum interdum">
+			<Payme_Movil:Evento.Valor>
+				<System:Single/>
+			</Payme_Movil:Evento.Valor>
+		</Payme_Movil:Evento>
+		<Payme_Movil:Evento Alerta="Vestibulum lectus nisl nunc" FechaHora="11/13/2012 19:34:01" Identificador="99" Nombre="Vestibulum odio fames" Tipo="Non lobortis nascetur">
+			<Payme_Movil:Evento.Valor>
+				<System:Single/>
+			</Payme_Movil:Evento.Valor>
+		</Payme_Movil:Evento>
+		<Payme_Movil:Evento Alerta="Felis adipiscing" FechaHora="11/13/2012 19:34:01" Identificador="71" Nombre="Pharetra placerat libero ipsum" Tipo="Laoreet parturient justo natoque">
+			<Payme_Movil:Evento.Valor>
+				<System:Single/>
+			</Payme_Movil:Evento.Valor>
+		</Payme_Movil:Evento>
+	</Payme_Movil:ClasePrincipal.Lista>
+</Payme_Movil:ClasePrincipal>

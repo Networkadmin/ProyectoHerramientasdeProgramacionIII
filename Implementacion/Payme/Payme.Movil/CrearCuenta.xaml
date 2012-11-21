@@ -1,0 +1,62 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Payme.Movil.CrearCuenta"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot es la cuadrícula raíz donde se coloca todo el contenido de la página-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contiene el nombre de la aplicación y el título de la página-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="PAYME" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="Crear Cuenta" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="64" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel x:Name="ContentPanel" Margin="12,0,12,0" Grid.Row="1" >
+        	<TextBlock TextWrapping="Wrap" Text="Nombre de la Cuenta" HorizontalAlignment="Center"/>
+        	<TextBox TextWrapping="Wrap"/>
+        	<TextBlock TextWrapping="Wrap" Text="Salario" HorizontalAlignment="Center"/>
+        	<TextBox TextWrapping="Wrap"/>
+        	<TextBlock TextWrapping="Wrap" Text="Frecuencia" HorizontalAlignment="Center"/>
+        	<TextBox TextWrapping="Wrap"/>
+        	<TextBlock TextWrapping="Wrap" Text="Rango 1" HorizontalAlignment="Center"/>
+        	<Grid HorizontalAlignment="Left" Height="72" Width="210">
+        		<TextBox TextWrapping="Wrap" Text="Desde" d:LayoutOverrides="Width, Height"/>
+        		<TextBox TextWrapping="Wrap" Text="Hasta" HorizontalAlignment="Right" Margin="0,0,-240,0" d:LayoutOverrides="Height" Width="210"/>
+        	</Grid>
+        	<TextBlock TextWrapping="Wrap" Text="Rango 2" HorizontalAlignment="Center"/>
+        	<Grid HorizontalAlignment="Left" Height="72" Width="122">
+        		<TextBox TextWrapping="Wrap" Text="Desde" d:LayoutOverrides="Height" Margin="0,0,-88,0"/>
+        		<TextBox TextWrapping="Wrap" Text="Hasta" HorizontalAlignment="Right" Margin="0,0,-329,0" d:LayoutOverrides="Height" Width="210"/>
+        	</Grid>
+        </StackPanel>
+
+        <!--ContentPanel. Colocar aquí el contenido adicional-->
+    </Grid>
+ 
+    <!--Código de ejemplo que muestra el uso de ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="Guardar" IconUri="/icons/appbar.save.rest.png" Text="Guardar" Click="Guardar_Click"/>
+            <shell:ApplicationBarIconButton x:Name="Cancelar" IconUri="/icons/appbar.cancel.rest.png" Text="Cancelar" Click="Cancelar_Click"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Elemento de menú 1"/>
+                <shell:ApplicationBarMenuItem Text="Elemento de menú 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

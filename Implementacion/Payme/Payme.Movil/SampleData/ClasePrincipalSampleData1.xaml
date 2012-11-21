@@ -1,0 +1,9 @@
+﻿<Payme_Movil:ClasePrincipal xmlns:Payme_Movil="clr-namespace:Payme.Movil">
+	<Payme_Movil:ClasePrincipal.Lista>
+		<Payme_Movil:Evento Alerta="name" FechaHora="11/13/2012 19:44:21" Identificador="1" Nombre="Pago de servicios publicos" Tipo="Egreso" Valor="150000"/>
+		<Payme_Movil:Evento Alerta="name" FechaHora="11/13/2012 19:44:21" Identificador="2" Nombre="Transporte" Tipo="Egreso" Valor="60000"/>
+		<Payme_Movil:Evento Alerta="name" FechaHora="11/13/2012 19:44:21" Identificador="3" Nombre="Pago Seguro del Carro" Tipo="Egreso" Valor="370000"/>
+		<Payme_Movil:Evento Alerta="name" FechaHora="11/13/2012 19:44:21" Identificador="4" Nombre="Pago Matricula" Tipo="Ingreso" Valor="560000"/>
+		
+	</Payme_Movil:ClasePrincipal.Lista>
+</Payme_Movil:ClasePrincipal>

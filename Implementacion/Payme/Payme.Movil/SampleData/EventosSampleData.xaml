@@ -1,0 +1,5 @@
+<Payme_Movil:Eventos xmlns:Payme_Movil="clr-namespace:Payme.Movil" xmlns:System="clr-namespace:System;assembly=mscorlib" Alerta="Maecenas vestibulum class aliquam" FechaHora="11/13/2012 19:22:05" Identificador="70" Nombre="Curae praesent integer nam cras" Tipo="Donec adipiscing aenean">
+	<Payme_Movil:Eventos.Valor>
+		<System:Single/>
+	</Payme_Movil:Eventos.Valor>
+</Payme_Movil:Eventos>
