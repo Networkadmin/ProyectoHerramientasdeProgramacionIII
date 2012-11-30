@@ -22,12 +22,19 @@ namespace Payme.Movil
 		
 		 private void Guardar_Click(object sender, System.EventArgs e)
         {
-            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+            
+			NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
         }
 
 		 private void Cancelar_Click(object sender, System.EventArgs e)
 		 {
 		 	// TODO: Agregar implementación de controlador de eventos aquí.
 		 }
+
+         private void Frecuencia_TextChanged(object sender, TextChangedEventArgs e)
+         {
+         }
+
+     
     }
 }

@@ -56,7 +56,18 @@ namespace Payme.Movil
                 // y consumirán energía de la batería cuando el usuario no esté usando el teléfono.
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
             }
+            CrearBaseDatos();
+        }
 
+        private void CrearBaseDatos()
+        {
+            using (BaseDatosDataContext contexto = new BaseDatosDataContext(cadenaConexion))
+            {
+                if (!contexto.DatabaseExists())
+                {
+                    contexto.CreateDatabase();
+                }
+            }
         }
 
         // Código para ejecutar cuando la aplicación se inicia (p.ej. a partir de Inicio)
@@ -107,6 +118,8 @@ namespace Payme.Movil
 
         // Evitar inicialización doble
         private bool phoneApplicationInitialized = false;
+
+        public static string cadenaConexion = "isostore:/Payme.sdf";
 
         // No agregar ningún código adicional a este método
         private void InitializePhoneApplication()

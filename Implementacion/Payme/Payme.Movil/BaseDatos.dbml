@@ -1,12 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Class="BaseDatosDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Table Name="" Member="Evento">
     <Type Name="Evento">
-      <Column Member="Identificador" Type="System.Int32" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Identificador" Type="System.Int32" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" CanBeNull="false" />
+      <Column Name="Valor" Type="System.Int32" CanBeNull="false" />
+      <Column Name="Tipo" Type="System.String" CanBeNull="false" />
+      <Column Name="FechaHora" Type="System.DateTime" CanBeNull="false" />
+      <Column Name="Alerta" Type="System.String" CanBeNull="false" />
+      <Column Member="IdCuenta" Type="System.String" CanBeNull="false" />
+      <Association Name="Cuenta_Evento" Member="Cuenta" ThisKey="IdCuenta" OtherKey="IdCuenta" Type="Cuenta" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="" Member="Cuenta">
+    <Type Name="Cuenta">
+      <Column Member="IdCuenta" Type="System.String" IsPrimaryKey="true" CanBeNull="false" />
       <Column Member="Nombre" Type="System.String" CanBeNull="false" />
-      <Column Member="Valor" Type="System.Int32" CanBeNull="false" />
-      <Column Member="Tipo" Type="System.String" CanBeNull="false" />
-      <Column Member="FechaHora" Type="System.DateTime" CanBeNull="false" />
-      <Column Member="Alerta" Type="System.String" CanBeNull="false" />
+      <Column Member="Valor" Type="int" CanBeNull="false" />
+      <Column Member="Frecuencia" Type="System.String" CanBeNull="false" />
+      <Column Member="Rango1_D" Type="System.DateTime" CanBeNull="false" />
+      <Column Member="Rango1_H" Type="System.DateTime" CanBeNull="false" />
+      <Column Member="Rango2_D" Type="System.DateTime" CanBeNull="false" />
+      <Column Member="Rango2_H" Type="System.DateTime" CanBeNull="false" />
+      <Association Name="Cuenta_Evento" Member="Evento" ThisKey="IdCuenta" OtherKey="IdCuenta" Type="Evento" />
     </Type>
   </Table>
 </Database>

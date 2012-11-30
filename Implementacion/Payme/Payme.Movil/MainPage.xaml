@@ -42,6 +42,7 @@
 	<phone:PhoneApplicationPage.ApplicationBar>
 		<shell:ApplicationBar>
 			<shell:ApplicationBarIconButton x:Name="Agregar" IconUri="/icons/appbar.add.rest.png" Text="Agregar" Click="Agregar_Click"/>
+			<shell:ApplicationBarIconButton x:Name="Consultar" IconUri="/icons/appbar.feature.search.rest.png" Text="Consultar" Click="Consultar_Click"/>
 		</shell:ApplicationBar>
 	</phone:PhoneApplicationPage.ApplicationBar>
 	<phone:PhoneApplicationPage.BorderBrush>

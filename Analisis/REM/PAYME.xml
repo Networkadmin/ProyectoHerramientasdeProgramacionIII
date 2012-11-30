@@ -207,7 +207,7 @@ Contexto de Operacion </rem:name>
 <rem:sources stakeholders ="STK-0003 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Se requiere una aplicación que controle los gastos de una persona. Para esto la persona debe crear una cuenta donde ingresara su salario y discriminarlo de acuerdo al número de pagos que recibe, sea de manera semestral, trimestral, bimensual, mensual, quincenal o semanal. Se requiere que sea tipo calendario para colocar en los días intermedios a los pagos la información de las obligaciones financieras que posee de la siguiente manera: se colocara en una fecha determinada, nombre de la obligación, valor a pagar, fecha de la obligación, fecha de alerta, hora de alerta, tipo de alerta. <br/>La aplicación descontara o aumentara del salario inicialmente ingresado el valor correspondiente al evento configurado en el calendario y de manera automática arrojara el valor a favor o en contra, con el fin de optimizar u organizar mis recursos y obtener un control específico frente a mis obligaciones. <br/>Además de esto podremos conocer el estado de las obligaciones (cumplida o descartada).<br/></rem:text>
+<rem:text>Se requiere una aplicación que controle los gastos de una persona. Para esto la persona debe crear una cuenta donde ingresara su salario y discriminarlo de acuerdo al número de pagos que recibe, sea de manera semestral, trimestral, bimensual, mensual, quincenal o semanal. Se requiere que sea tipo calendario para colocar en los días intermedios a los pagos la información de las obligaciones financieras que posee de la siguiente manera: se colocara en una fecha determinada, nombre de la obligación, valor a pagar, fecha de la obligación, fecha de alerta, hora de alerta, tipo de alerta. <br/>La aplicación descontara o aumentara del salario inicialmente ingresado el valor correspondiente al <rem:ref oid="GLO-0004">evento</rem:ref> configurado en el calendario y de manera automática arrojara el valor a favor o en contra, con el fin de optimizar u organizar mis recursos y obtener un control específico frente a mis obligaciones. <br/>Además de esto podremos conocer el estado de las obligaciones (cumplida o descartada).<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -228,33 +228,9 @@ Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>3.2 </rem:number>
 <rem:objective
- oid = "OBJ-0009">
-<rem:name>
-Relacion de ingresos y Egresos</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2012</rem:year>
-<rem:month>10</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 "/>
-<rem:sources stakeholders ="STK-0003 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:importance value = "IMV-0002"/>
-<rem:urgency value = "URV-0002"/>
-<rem:status value = "STV-0004"/>
-<rem:stability value = "SBV-0004"/>
-<rem:description>
-Almacenar los datos ingresados por el  usuario, correspondientes a las obligaciones y/o necesidades financieras.</rem:description>
-</rem:objective>
-<rem:objective
  oid = "OBJ-0010">
 <rem:name>
-identificar obligaciones financiaras </rem:name>
+Identificar las obligaciones financiaras </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -273,36 +249,12 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-identificar obligaciones financiaras  para cubrilas a partir de los ingresos<br/><br/></rem:description>
-</rem:objective>
-<rem:objective
- oid = "OBJ-0011">
-<rem:name>
-Generar alarma</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2012</rem:year>
-<rem:month>10</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 "/>
-<rem:sources stakeholders ="STK-0003 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:importance value = "IMV-0002"/>
-<rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0004"/>
-<rem:stability value = "SBV-0004"/>
-<rem:description>
-Generar un aviso cuando se deba realizar el pago de una obligacion</rem:description>
+permitir el almacenamiento de las obligaciones financiaras  para cubrilas a partir de los ingresos o egresos.<br/><br/></rem:description>
 </rem:objective>
 <rem:objective
  oid = "OBJ-0012">
 <rem:name>
-Proyecion de gastos</rem:name>
+Proyectar gastos</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -321,12 +273,12 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-permitir al usuario realizar una planeacion  adecauda de sus gastos con el fin de clarificar sus finanzas para un determinado periodo.</rem:description>
+permitir al usuario realizar una planeacion adecauda de sus gastos con el fin de clarificar sus finanzas para un determinado periodo.</rem:description>
 </rem:objective>
 <rem:objective
- oid = "OBJ-0013">
+ oid = "OBJ-0011">
 <rem:name>
-Registros  de eventos</rem:name>
+Recordar las obligaciones financieras</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -340,12 +292,12 @@ Registros  de eventos</rem:name>
 <rem:sources stakeholders ="STK-0003 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance value = "IMV-0004"/>
-<rem:urgency value = "URV-0004"/>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
 <rem:status value = "STV-0004"/>
-<rem:stability value = "SBV-0003"/>
+<rem:stability value = "SBV-0004"/>
 <rem:description>
-almacenar los registros de cada evento con un mes de antelacion </rem:description>
+permitir al usuario estar al dia con las obligaciones financieras.</rem:description>
 </rem:objective>
 </rem:section>
 <rem:section
@@ -382,7 +334,7 @@ Lista de Caracteristicas</rem:name>
 <rem:sources stakeholders ="STK-0003 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>- Cuenta : <br/><br/>Administrar Usuario; el sistema permitira crear modificar y eliminar una cuenta<br/><br/>- Evento: <br/><br/>Detalle Evento :  el sistema permitira  crear actualizar, borrar , y consultar eventos.<br/><br/>Borrado automatico: pasado un mes se borraran todos los registos cumplidos hasta el momento.<br/><br/></rem:text>
+<rem:text>- Cuenta : <br/><br/>Administrar Usuario; el sistema permitira crear modificar y eliminar una cuenta<br/><br/>- <rem:ref oid="GLO-0004">Evento</rem:ref>: <br/><br/>Detalle <rem:ref oid="GLO-0004">Evento</rem:ref> :  el sistema permitira  crear actualizar, borrar , y consultar eventos.<br/><br/>Borrado automatico: pasado un mes se borraran todos los registos cumplidos hasta el momento.<br/><br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -447,7 +399,7 @@ Ninguno</rem:comments>
 <rem:graphicFile
  oid = "GRF-0005">
 <rem:name>
-Calendario Evento </rem:name>
+Calendario <rem:ref oid="GLO-0004">Evento</rem:ref> </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -468,7 +420,7 @@ Ninguno</rem:comments>
 <rem:graphicFile
  oid = "GRF-0006">
 <rem:name>
-Detalle Evento </rem:name>
+Detalle <rem:ref oid="GLO-0004">Evento</rem:ref> </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -510,7 +462,7 @@ Ninguno</rem:comments>
 <rem:graphicFile
  oid = "GRF-0008">
 <rem:name>
-Consulta de Evento</rem:name>
+Consulta de <rem:ref oid="GLO-0004">Evento</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -525,7 +477,7 @@ Consulta de Evento</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:fileName>
-<![CDATA[.\Diseño\Cunsulta de Eventos.png]]>
+<![CDATA[..\..\Diseño\Cunsulta de Eventos.png]]>
 </rem:fileName>
 </rem:graphicFile>
 <rem:graphicFile
@@ -657,12 +609,12 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-Generar una alerta segun la programacion del evento </rem:description>
+Generar una alerta segun la programacion del <rem:ref oid="GLO-0004">evento</rem:ref> </rem:description>
 </rem:functionalRequirement>
 <rem:functionalRequirement
  oid = "FRQ-0004">
 <rem:name>
-Administar Evento</rem:name>
+Administar <rem:ref oid="GLO-0004">Evento</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -802,27 +754,27 @@ Usuario</rem:relevantConcept>
 <rem:value>1</rem:value>
 <rem:timeUnit value = "TUV-0002"/>
 </rem:maximumLifeTime>
-<rem:averageOcurrences><rem:tbd/>
+<rem:averageOcurrences><rem:value>1</rem:value>
 </rem:averageOcurrences>
-<rem:maximumOcurrences><rem:tbd/>
+<rem:maximumOcurrences><rem:value>1</rem:value>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0004">
 <rem:description>
 Nombre</rem:description>
 <rem:comments>
-Ninguno</rem:comments>
+Nombre de la cuenta del usuario</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0001">
 <rem:description>
 Salario Base</rem:description>
 <rem:comments>
-Ninguno</rem:comments>
+Base de ingresos del usuario</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0002">
 <rem:description>
 Frecuencia de pago</rem:description>
 <rem:comments>
-Ninguno</rem:comments>
+Cantidad de pagos que el usuario recibe en el mes.</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0005">
 <rem:description>
@@ -832,43 +784,9 @@ Periodo de dias entre pago y pago</rem:comments>
 </rem:specificData>
 </rem:informationRequirement>
 <rem:informationRequirement
- oid = "IRQ-0003">
-<rem:name>
-Datos del evento</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2012</rem:year>
-<rem:month>10</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 "/>
-<rem:sources stakeholders ="STK-0003 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:importance value = "IMV-0003"/>
-<rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0004"/>
-<rem:stability value = "SBV-0004"/>
-<rem:relevantConcept>
-Datos de un evento</rem:relevantConcept>
-<rem:averageLifeTime>
-<rem:tbd/>
-</rem:averageLifeTime>
-<rem:maximumLifeTime>
-<rem:tbd/>
-</rem:maximumLifeTime>
-<rem:averageOcurrences><rem:tbd/>
-</rem:averageOcurrences>
-<rem:maximumOcurrences><rem:tbd/>
-</rem:maximumOcurrences>
-</rem:informationRequirement>
-<rem:informationRequirement
  oid = "IRQ-0002">
 <rem:name>
-Eventos Cumplidos</rem:name>
+Datos de Eventos</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -882,48 +800,59 @@ Eventos Cumplidos</rem:name>
 <rem:sources stakeholders ="STK-0003 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
 <rem:relevantConcept>
 Eventos</rem:relevantConcept>
 <rem:averageLifeTime>
-<rem:tbd/>
+<rem:value>30</rem:value>
+<rem:timeUnit value = "TUV-0005"/>
 </rem:averageLifeTime>
 <rem:maximumLifeTime>
 <rem:value>30</rem:value>
 <rem:timeUnit value = "TUV-0008"/>
 </rem:maximumLifeTime>
-<rem:averageOcurrences><rem:tbd/>
+<rem:averageOcurrences><rem:value>5</rem:value>
 </rem:averageOcurrences>
-<rem:maximumOcurrences><rem:tbd/>
+<rem:maximumOcurrences><rem:value>10</rem:value>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0006">
 <rem:description>
 Nombre</rem:description>
 <rem:comments>
-Ninguno</rem:comments>
+Descripcion del <rem:ref oid="GLO-0004">evento</rem:ref></rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0003">
 <rem:description>
-Descripcion del evento</rem:description>
+Valor</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0045">
+<rem:description>
+Tipo</rem:description>
+<rem:comments>
+Especifica ingreso o egreso</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0007">
 <rem:description>
 Fecha</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0046">
+<rem:description>
+Hora</rem:description>
+<rem:comments>
+</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0047">
+<rem:description>
+Alerta</rem:description>
+<rem:comments>
+Configuracion de perfiles de alerta</rem:comments>
 </rem:specificData>
 </rem:informationRequirement>
 </rem:section>
@@ -1094,167 +1023,6 @@ Ninguno</rem:comments>
 </rem:step>
 </rem:useCase>
 <rem:useCase
- oid = "UC-0004">
-<rem:name>
-Crear Eventos</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2012</rem:year>
-<rem:month>10</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 "/>
-<rem:sources stakeholders ="STK-0003 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:importance value = "IMV-0002"/>
-<rem:urgency value = "URV-0002"/>
-<rem:status value = "STV-0004"/>
-<rem:stability value = "SBV-0004"/>
-<rem:triggeringEvent>
-El usuario ingresa un evento al calendario</rem:triggeringEvent>
-<rem:precondition>
-crear una cuenta</rem:precondition>
-<rem:postcondition>
-El sistema calcula el saldo de la cuenta</rem:postcondition>
-<rem:frequency>
-<rem:value>
-5
-</rem:value>
-<rem:timeUnit value = "TUV-0002"/>
-</rem:frequency>
-<rem:step oid = "STP-0013">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-solicita al sistema la creacion de un evento</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0016">
-<rem:number>2</rem:number>
-<rem:systemAction>
-<rem:description>
-solicita los detalles del evento </rem:description>
-<rem:performance>
-<rem:value>
-5
-</rem:value>
-<rem:timeUnit value = "TUV-0002"/>
-</rem:performance>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0017">
-<rem:number>3</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-ingresa los detalles del evento <br/></rem:description>
-</rem:actorAction>
-<rem:stepException oid = "STX-0010">
-<rem:condition>
- ingresa un valor del alfabeto, en el campo&quot; valor&quot;</rem:condition>
-<rem:systemAction>
-<rem:description>
-arroja un error diciendo &quot; este campo solo se admiten datos numericos&quot;</rem:description>
-</rem:systemAction>
-<rem:termination value = "TEV-0003"/>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:stepException>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0030">
-<rem:number>4</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-espesifica si el valor del evento  es un egreso o un ingreso</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0020">
-<rem:number>5</rem:number>
-<rem:systemAction>
-<rem:description>
- solicita la asignacion de una alerta </rem:description>
-<rem:performance>
-<rem:value>
-5
-</rem:value>
-<rem:timeUnit value = "TUV-0002"/>
-</rem:performance>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0021">
-<rem:number>6</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-asigna la  alerta del evento </rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0023">
-<rem:number>7</rem:number>
-<rem:systemAction>
-<rem:description>
-carga la alerta del evento</rem:description>
-<rem:performance>
-<rem:value>
-5
-</rem:value>
-<rem:timeUnit value = "TUV-0002"/>
-</rem:performance>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0031">
-<rem:number>8</rem:number>
-<rem:systemAction>
-<rem:description>
- valida los detalles del evento </rem:description>
-</rem:systemAction>
-<rem:stepException oid = "STX-0011">
-<rem:condition>
-hacen faltan datos </rem:condition>
-<rem:systemAction>
-<rem:description>
-arrojara un mensaje diciendo &quot;no puede continuar hasta que ingrese los datos  completamente&quot;</rem:description>
-</rem:systemAction>
-<rem:termination value = "TEV-0003"/>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:stepException>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0022">
-<rem:number>9</rem:number>
-<rem:systemAction>
-<rem:description>
-guarda los detalles del evento y lo muestra en el calendario</rem:description>
-<rem:performance>
-<rem:value>
-5
-</rem:value>
-<rem:timeUnit value = "TUV-0002"/>
-</rem:performance>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-</rem:useCase>
-<rem:useCase
  oid = "UC-0003">
 <rem:name>
 Crear cuenta</rem:name>
@@ -1280,7 +1048,7 @@ El usuario ingresa los datos correspondientes a la cuenta (Salario, Frecuencia d
 <rem:precondition>
 inicio de seccion por primera vez</rem:precondition>
 <rem:postcondition>
-depues de cargar la cuenta  el sistema solicitara la asignacion de un evento</rem:postcondition>
+depues de cargar la cuenta  el sistema solicitara la asignacion de un <rem:ref oid="GLO-0004">evento</rem:ref></rem:postcondition>
 <rem:frequency>
 <rem:value>
 1
@@ -1347,9 +1115,9 @@ Ninguno</rem:comments>
 </rem:step>
 </rem:useCase>
 <rem:useCase
- oid = "UC-0006">
+ oid = "UC-0004">
 <rem:name>
-Calcular estado de cuenta</rem:name>
+Crear Eventos</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1368,7 +1136,168 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0004"/>
 <rem:triggeringEvent>
-El sistema calcula el saldo de la cuenta a partir de los eventos creados</rem:triggeringEvent>
+El usuario ingresa un <rem:ref oid="GLO-0004">evento</rem:ref> al calendario</rem:triggeringEvent>
+<rem:precondition>
+crear una cuenta</rem:precondition>
+<rem:postcondition>
+El sistema calcula el saldo de la cuenta</rem:postcondition>
+<rem:frequency>
+<rem:value>
+5
+</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:frequency>
+<rem:step oid = "STP-0013">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+solicita al sistema la creacion de un <rem:ref oid="GLO-0004">evento</rem:ref></rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0016">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+solicita los detalles del <rem:ref oid="GLO-0004">evento</rem:ref> </rem:description>
+<rem:performance>
+<rem:value>
+5
+</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:performance>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0017">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+ingresa los detalles del <rem:ref oid="GLO-0004">evento</rem:ref> <br/></rem:description>
+</rem:actorAction>
+<rem:stepException oid = "STX-0010">
+<rem:condition>
+ ingresa un valor del alfabeto, en el campo&quot; valor&quot;</rem:condition>
+<rem:systemAction>
+<rem:description>
+arroja un error diciendo &quot; este campo solo se admiten datos numericos&quot;</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0030">
+<rem:number>4</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+espesifica si el valor del <rem:ref oid="GLO-0004">evento</rem:ref>  es un egreso o un ingreso</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0020">
+<rem:number>5</rem:number>
+<rem:systemAction>
+<rem:description>
+ solicita la asignacion de una alerta </rem:description>
+<rem:performance>
+<rem:value>
+5
+</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:performance>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0021">
+<rem:number>6</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+asigna la  alerta del <rem:ref oid="GLO-0004">evento</rem:ref> </rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0023">
+<rem:number>7</rem:number>
+<rem:systemAction>
+<rem:description>
+carga la alerta del <rem:ref oid="GLO-0004">evento</rem:ref></rem:description>
+<rem:performance>
+<rem:value>
+5
+</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:performance>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0031">
+<rem:number>8</rem:number>
+<rem:systemAction>
+<rem:description>
+ valida los detalles del <rem:ref oid="GLO-0004">evento</rem:ref> </rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0011">
+<rem:condition>
+hacen faltan datos </rem:condition>
+<rem:systemAction>
+<rem:description>
+arrojara un mensaje diciendo &quot;no puede continuar hasta que ingrese los datos  completamente&quot;</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0022">
+<rem:number>9</rem:number>
+<rem:systemAction>
+<rem:description>
+guarda los detalles del <rem:ref oid="GLO-0004">evento</rem:ref> y lo muestra en el calendario</rem:description>
+<rem:performance>
+<rem:value>
+5
+</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:performance>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0006">
+<rem:name>
+Lista Eventos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2012</rem:year>
+<rem:month>10</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0004"/>
+<rem:stability value = "SBV-0004"/>
+<rem:triggeringEvent>
+El sistema  muestra los eventos y  calcula el saldo de la cuenta a partir de los eventos creados en el calendario</rem:triggeringEvent>
 <rem:precondition>
 el salario a favor sera establecido según el salario base y el rango   establecido en la creacion de  cuenta</rem:precondition>
 <rem:postcondition>
@@ -1379,11 +1308,20 @@ el saldo a favor  se  modifica a partir de los eventos creados</rem:postconditio
 </rem:value>
 <rem:timeUnit value = "TUV-0008"/>
 </rem:frequency>
-<rem:step oid = "STP-0029">
+<rem:step oid = "STP-0048">
 <rem:number>1</rem:number>
 <rem:systemAction>
 <rem:description>
-calcula su saldo apartir de los eventos creados</rem:description>
+muestra los eventos diarios programados por el usuario</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0029">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+calcula el saldo de la cuenta a partir de los eventos creados y lo muestra en pantalla</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1411,9 +1349,9 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0004"/>
 <rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
-desea ver todos los ventos con la  fecha y valor del evento de manera general </rem:triggeringEvent>
+desea ver todos los ventos con la  fecha y valor del <rem:ref oid="GLO-0004">evento</rem:ref> de manera general </rem:triggeringEvent>
 <rem:precondition>
-por lo menos un evento creado</rem:precondition>
+por lo menos un <rem:ref oid="GLO-0004">evento</rem:ref> creado</rem:precondition>
 <rem:postcondition>
 mostrar todos los eventos de manera general </rem:postcondition>
 <rem:frequency>
@@ -1426,7 +1364,7 @@ mostrar todos los eventos de manera general </rem:postcondition>
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-solicitara mostrar vistas </rem:description>
+solicita mostrar todos los eventos</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1435,7 +1373,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:systemAction>
 <rem:description>
-cargara los eventos existen</rem:description>
+carga los eventos existentes</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1444,7 +1382,7 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-escogera el evento que desee ver mas en detalle</rem:description>
+selecciona el <rem:ref oid="GLO-0004">evento</rem:ref> que desee ver con mas detalle</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1453,7 +1391,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-cargara  la vista  detalles del evento especificado </rem:description>
+carga la vista de detalles del <rem:ref oid="GLO-0004">evento</rem:ref> especificado </rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1483,9 +1421,9 @@ Ninguno</rem:comments>
 <rem:triggeringEvent>
 Consulta de eventos </rem:triggeringEvent>
 <rem:precondition>
-tener un evento creado </rem:precondition>
+tener un <rem:ref oid="GLO-0004">evento</rem:ref> creado </rem:precondition>
 <rem:postcondition>
-mostrar el evento especificado  por el usuario</rem:postcondition>
+mostrar el <rem:ref oid="GLO-0004">evento</rem:ref> especificado  por el usuario</rem:postcondition>
 <rem:frequency>
 <rem:value>
 1
@@ -1505,7 +1443,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:systemAction>
 <rem:description>
-cargara los eventos existentes hasta la fecha</rem:description>
+carga los eventos existentes hasta la fecha actual</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1514,7 +1452,7 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-buscar el mes del evento</rem:description>
+busca el mes del <rem:ref oid="GLO-0004">evento</rem:ref> que requiere</rem:description>
 </rem:actorAction>
 <rem:comments>
 solo se puede mirar los eventos pasados tres meses de ahy en adelante los eventos seran borrados automaticmanente.</rem:comments>
@@ -1523,7 +1461,7 @@ solo se puede mirar los eventos pasados tres meses de ahy en adelante los evento
 <rem:number>4</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-escogera el evento que desee ver con detalle </rem:description>
+selecciona el <rem:ref oid="GLO-0004">evento</rem:ref> que desee ver con detalle </rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1532,7 +1470,83 @@ Ninguno</rem:comments>
 <rem:number>5</rem:number>
 <rem:systemAction>
 <rem:description>
-cargara la vista  detalles del evento especificado</rem:description>
+carga la vista de detalles del <rem:ref oid="GLO-0004">evento</rem:ref> especificado</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0009">
+<rem:name>
+Alerta</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2012</rem:year>
+<rem:month>11</rem:month>
+<rem:day>12</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0004"/>
+<rem:stability value = "SBV-0004"/>
+<rem:triggeringEvent>
+una alarma se activa segun como se ha confugurado en la creacion de un <rem:ref oid="GLO-0004">evento</rem:ref> </rem:triggeringEvent>
+<rem:precondition>
+Confuguarar Detalles del <rem:ref oid="GLO-0004">evento</rem:ref> </rem:precondition>
+<rem:postcondition>
+calendario <rem:ref oid="GLO-0004">evento</rem:ref> </rem:postcondition>
+<rem:frequency>
+<rem:value>
+5
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
+</rem:frequency>
+<rem:step oid = "STP-0044">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+valida los detalles del tipo de alerta (fecha, hora, sonido) de un <rem:ref oid="GLO-0004">evento</rem:ref>.</rem:description>
+<rem:performance>
+<rem:value>
+5
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
+</rem:performance>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0050">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+genera la alerta en pantalla del <rem:ref oid="GLO-0004">evento</rem:ref></rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0052">
+<rem:number>3</rem:number>
+<rem:systemAction>
+<rem:description>
+el usuario aprueba, aplaza o descarta el <rem:ref oid="GLO-0004">evento</rem:ref></rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0053">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+guarda el estado del <rem:ref oid="GLO-0004">evento</rem:ref></rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1595,6 +1609,25 @@ Glosario</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>7 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0004">
+<rem:name>
+<rem:ref oid="GLO-0004">Evento</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2012</rem:year>
+<rem:month>11</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.</rem:text>
+</rem:glossaryItem>
 </rem:section>
 </rem:c_requirementsSpecification>
 <rem:d_requirementsSpecification oid = "DRS-0002">
@@ -1813,22 +1846,10 @@ Hour:minutes:seconds</rem:description>
 <rem:defectStatusValue oid = "DSV-0004">
 <rem:name>eliminado</rem:name>
 </rem:defectStatusValue>
-<rem:defectTypeValue oid = "DTV-0001">
-<rem:name>PD</rem:name>
+<rem:defectTypeValue oid = "DTV-0005">
+<rem:name>No verificabilidad</rem:name>
 <rem:description>
-<![CDATA[Por Determinar]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0002">
-<rem:name>Ambigüedad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0003">
-<rem:name>No necesidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
+<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0004">
@@ -1837,10 +1858,22 @@ Hour:minutes:seconds</rem:description>
 <![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0005">
-<rem:name>No verificabilidad</rem:name>
+<rem:defectTypeValue oid = "DTV-0003">
+<rem:name>No necesidad</rem:name>
 <rem:description>
-<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
+<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0002">
+<rem:name>Ambigüedad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0001">
+<rem:name>PD</rem:name>
+<rem:description>
+<![CDATA[Por Determinar]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0006">

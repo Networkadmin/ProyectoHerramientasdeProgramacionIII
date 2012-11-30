@@ -334,95 +334,18 @@ Contexto</h1><a name="SEC-0001" />
 <h2 align="left">3.1 
 Enunciado</h2><a name="PRG-0001" />
 <p>Se requiere una aplicación que controle los gastos de una persona. Para esto la persona debe crear una cuenta donde ingresara su salario y discriminarlo de acuerdo al número de pagos que recibe, sea de manera semestral, trimestral, bimensual, mensual, quincenal o semanal. Se requiere que sea tipo calendario para colocar en los días intermedios a los pagos la información de las obligaciones financieras que posee de la siguiente manera: se colocara en una fecha determinada, nombre de la obligación, valor a pagar, fecha de la obligación, fecha de alerta, hora de alerta, tipo de alerta. 
-<br />La aplicación descontara o aumentara del salario inicialmente ingresado el valor correspondiente al evento configurado en el calendario y de manera automática arrojara el valor a favor o en contra, con el fin de optimizar u organizar mis recursos y obtener un control específico frente a mis obligaciones. 
+<br />La aplicación descontara o aumentara del salario inicialmente ingresado el valor correspondiente al <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a> configurado en el calendario y de manera automática arrojara el valor a favor o en contra, con el fin de optimizar u organizar mis recursos y obtener un control específico frente a mis obligaciones. 
 <br />Además de esto podremos conocer el estado de las obligaciones (cumplida o descartada).
 <br />
 </p>
 <a name="SEC-0002" />
 <h2 align="left">3.2 
-Necesidades </h2><a name="OBJ-0009" />
-<table border="1" width="100%">
-<tr bgcolor="#c8e0e0">
-<th align="left" valign="top">OBJ-0009</th>
-<th align="left" valign="top" width="100%">
-Relacion de ingresos y Egresos</th>
-</tr>
-<tr>
-<th align="left" valign="top">Versión</th>
-<td align="left" valign="top">1.0 
-			( 05/10/2012 )
-        </td>
-</tr>
-<tr>
-<th align="left" valign="top">Autores</th>
-<td align="left" valign="top" colspan="1">
-<ul>
-<li>
-<a href="#STK-0001">
-Alexander Restrepo</a>
-<br />
-</li>
-<li>
-<a href="#STK-0002">
-Victor Mario</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Fuentes</th>
-<td align="left" valign="top" colspan="1">
-<ul>
-<li>
-<a href="#STK-0003">
-Sorey Garcia</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Descripción</th>
-<td align="left" valign="top">
-    El sistema deberá 
-<em>
-Almacenar los datos ingresados por el  usuario, correspondientes a las obligaciones y/o necesidades financieras.</em>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Subobjetivos</th>
-<td align="left" valign="top">Ninguno</td>
-</tr>
-<tr>
-<th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="1">vital</td>
-</tr>
-<tr>
-<th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="1">inmediatamente</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="1">pendiente de validación</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="1">alta</td>
-</tr>
-<tr>
-<th align="left" valign="top">Comentarios</th>
-<td align="left" valign="top" colspan="1">
-Ninguno</td>
-</tr>
-</table>
-<p />
-<a name="OBJ-0010" />
+Necesidades </h2><a name="OBJ-0010" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">OBJ-0010</th>
 <th align="left" valign="top" width="100%">
-identificar obligaciones financiaras </th>
+Identificar las obligaciones financiaras </th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -464,7 +387,7 @@ Sorey Garcia</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-identificar obligaciones financiaras  para cubrilas a partir de los ingresos
+permitir el almacenamiento de las obligaciones financiaras  para cubrilas a partir de los ingresos o egresos.
 <br />
 <br />
 </em>
@@ -497,89 +420,12 @@ Ninguno</td>
 </tr>
 </table>
 <p />
-<a name="OBJ-0011" />
-<table border="1" width="100%">
-<tr bgcolor="#c8e0e0">
-<th align="left" valign="top">OBJ-0011</th>
-<th align="left" valign="top" width="100%">
-Generar alarma</th>
-</tr>
-<tr>
-<th align="left" valign="top">Versión</th>
-<td align="left" valign="top">1.0 
-			( 05/10/2012 )
-        </td>
-</tr>
-<tr>
-<th align="left" valign="top">Autores</th>
-<td align="left" valign="top" colspan="1">
-<ul>
-<li>
-<a href="#STK-0001">
-Alexander Restrepo</a>
-<br />
-</li>
-<li>
-<a href="#STK-0002">
-Victor Mario</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Fuentes</th>
-<td align="left" valign="top" colspan="1">
-<ul>
-<li>
-<a href="#STK-0003">
-Sorey Garcia</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Descripción</th>
-<td align="left" valign="top">
-    El sistema deberá 
-<em>
-Generar un aviso cuando se deba realizar el pago de una obligacion</em>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Subobjetivos</th>
-<td align="left" valign="top">Ninguno</td>
-</tr>
-<tr>
-<th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="1">vital</td>
-</tr>
-<tr>
-<th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="1">hay presión</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="1">pendiente de validación</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="1">alta</td>
-</tr>
-<tr>
-<th align="left" valign="top">Comentarios</th>
-<td align="left" valign="top" colspan="1">
-Ninguno</td>
-</tr>
-</table>
-<p />
 <a name="OBJ-0012" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">OBJ-0012</th>
 <th align="left" valign="top" width="100%">
-Proyecion de gastos</th>
+Proyectar gastos</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -621,7 +467,7 @@ Sorey Garcia</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-permitir al usuario realizar una planeacion  adecauda de sus gastos con el fin de clarificar sus finanzas para un determinado periodo.</em>
+permitir al usuario realizar una planeacion adecauda de sus gastos con el fin de clarificar sus finanzas para un determinado periodo.</em>
 </td>
 </tr>
 <tr>
@@ -651,12 +497,12 @@ Ninguno</td>
 </tr>
 </table>
 <p />
-<a name="OBJ-0013" />
+<a name="OBJ-0011" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
-<th align="left" valign="top">OBJ-0013</th>
+<th align="left" valign="top">OBJ-0011</th>
 <th align="left" valign="top" width="100%">
-Registros  de eventos</th>
+Recordar las obligaciones financieras</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -698,7 +544,7 @@ Sorey Garcia</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-almacenar los registros de cada evento con un mes de antelacion </em>
+permitir al usuario estar al dia con las obligaciones financieras.</em>
 </td>
 </tr>
 <tr>
@@ -707,11 +553,11 @@ almacenar los registros de cada evento con un mes de antelacion </em>
 </tr>
 <tr>
 <th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="1">quedaría bien</td>
+<td align="left" valign="top" colspan="1">vital</td>
 </tr>
 <tr>
 <th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="1">puede esperar</td>
+<td align="left" valign="top" colspan="1">hay presión</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
@@ -719,7 +565,7 @@ almacenar los registros de cada evento con un mes de antelacion </em>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="1">media</td>
+<td align="left" valign="top" colspan="1">alta</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
@@ -735,9 +581,9 @@ Caracteristicas</h2><a name="PRG-0003" />
 <br />
 <br />Administrar Usuario; el sistema permitira crear modificar y eliminar una cuenta
 <br />
-<br />- Evento: 
+<br />- <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">Evento</a>: 
 <br />
-<br />Detalle Evento :  el sistema permitira  crear actualizar, borrar , y consultar eventos.
+<br />Detalle <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">Evento</a> :  el sistema permitira  crear actualizar, borrar , y consultar eventos.
 <br />
 <br />Borrado automatico: pasado un mes se borraran todos los registos cumplidos hasta el momento.
 <br />
@@ -787,7 +633,7 @@ Detalle Evento </p>
 Eventos Diarios</p>
 <a name="GRF-0008" />
 <p align="center">
-<img src=".\Diseño\Cunsulta de Eventos.png" title=".\Diseño\Cunsulta de Eventos.png" />
+<img src="..\..\Diseño\Cunsulta de Eventos.png" title="..\..\Diseño\Cunsulta de Eventos.png" />
 </p>
 <p align="center">
 <b>Figura 6</b>:
@@ -1010,7 +856,8 @@ Sorey Garcia</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-Generar una alerta segun la programacion del evento </em>
+Generar una alerta segun la programacion del <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>
+</em>
 </td>
 </tr>
 <tr>
@@ -1041,7 +888,8 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">FRQ-0004</th>
 <th align="left" valign="top" width="100%">
-Administar Evento</th>
+Administar <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">Evento</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -1333,13 +1181,22 @@ Usuario.
 <ul>
 <li>
 <a name="DAT-0004" />
-Nombre</li>
+Nombre
+								(<em>
+Nombre de la cuenta del usuario</em>)
+							</li>
 <li>
 <a name="DAT-0001" />
-Salario Base</li>
+Salario Base
+								(<em>
+Base de ingresos del usuario</em>)
+							</li>
 <li>
 <a name="DAT-0002" />
-Frecuencia de pago</li>
+Frecuencia de pago
+								(<em>
+Cantidad de pagos que el usuario recibe en el mes.</em>)
+							</li>
 <li>
 <a name="DAT-0005" />
 Rangos
@@ -1366,12 +1223,8 @@ Periodo de dias entre pago y pago</em>)
 <th align="left" valign="top">Máximo</th>
 </tr>
 <tr>
-<td>
-<font color="red"><b>PD</b></font>
-</td>
-<td>
-<font color="red"><b>PD</b></font>
-</td>
+<td>1</td>
+<td>1</td>
 </tr>
 <tr>
 <th align="left" valign="top">Importancia</th>
@@ -1396,121 +1249,12 @@ Ninguno</td>
 </tr>
 </table>
 <p />
-<a name="IRQ-0003" />
-<table border="1" width="100%">
-<tr bgcolor="#c8e0e0">
-<th align="left" valign="top">IRQ-0003</th>
-<th align="left" valign="top" width="100%" colspan="2">
-Datos del evento</th>
-</tr>
-<tr>
-<th align="left" valign="top">Versión</th>
-<td align="left" valign="top" colspan="2">1.0 
-			( 26/10/2012 )
-        </td>
-</tr>
-<tr>
-<th align="left" valign="top">Autores</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0001">
-Alexander Restrepo</a>
-<br />
-</li>
-<li>
-<a href="#STK-0002">
-Victor Mario</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Fuentes</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0003">
-Sorey Garcia</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Dependencias</th>
-<td align="left" valign="top" colspan="2">Ninguno</td>
-</tr>
-<tr>
-<th align="left" valign="top">Descripción</th>
-<td colspan="2">
-    El sistema deberá almacenar la información correspondiente a 
-<em>
-Datos de un evento.
-				</em>
-    En concreto:
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Datos específicos</th>
-<td colspan="2" align="left" valign="top">Ninguno</td>
-</tr>
-<tr>
-<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
-<th align="left" valign="top">Medio</th>
-<th align="left" valign="top">Máximo</th>
-</tr>
-<tr>
-<td>
-<font color="red"><b>PD</b></font>
-</td>
-<td>
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
-<th align="left" valign="top">Medio</th>
-<th align="left" valign="top">Máximo</th>
-</tr>
-<tr>
-<td>
-<font color="red"><b>PD</b></font>
-</td>
-<td>
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">importante</td>
-</tr>
-<tr>
-<th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">hay presión</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">pendiente de validación</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">alta</td>
-</tr>
-<tr>
-<th align="left" valign="top">Comentarios</th>
-<td align="left" valign="top" colspan="2">
-Ninguno</td>
-</tr>
-</table>
-<p />
 <a name="IRQ-0002" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0002</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Eventos Cumplidos</th>
+Datos de Eventos</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -1567,13 +1311,32 @@ Eventos.
 <ul>
 <li>
 <a name="DAT-0006" />
-Nombre</li>
+Nombre
+								(<em>
+Descripcion del <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>
+</em>)
+							</li>
 <li>
 <a name="DAT-0003" />
-Descripcion del evento</li>
+Valor</li>
+<li>
+<a name="DAT-0045" />
+Tipo
+								(<em>
+Especifica ingreso o egreso</em>)
+							</li>
 <li>
 <a name="DAT-0007" />
 Fecha</li>
+<li>
+<a name="DAT-0046" />
+Hora</li>
+<li>
+<a name="DAT-0047" />
+Alerta
+								(<em>
+Configuracion de perfiles de alerta</em>)
+							</li>
 </ul>
 </td>
 </tr>
@@ -1583,9 +1346,8 @@ Fecha</li>
 <th align="left" valign="top">Máximo</th>
 </tr>
 <tr>
-<td>
-<font color="red"><b>PD</b></font>
-</td>
+<td>30 
+                        mes(es)</td>
 <td>30 
                         día(s)</td>
 </tr>
@@ -1595,36 +1357,24 @@ Fecha</li>
 <th align="left" valign="top">Máximo</th>
 </tr>
 <tr>
-<td>
-<font color="red"><b>PD</b></font>
-</td>
-<td>
-<font color="red"><b>PD</b></font>
-</td>
+<td>5</td>
+<td>10</td>
 </tr>
 <tr>
 <th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">vital</td>
 </tr>
 <tr>
 <th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">hay presión</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">validado</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">alta</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
@@ -1882,265 +1632,6 @@ Ninguno</td>
 </tr>
 </table>
 <p />
-<a name="UC-0004" />
-<table border="1" width="100%">
-<tr bgcolor="#c8e0e0">
-<th align="left" valign="top">UC-0004</th>
-<th align="left" valign="top" width="100%" colspan="2">
-Crear Eventos</th>
-</tr>
-<tr>
-<th align="left" valign="top">Versión</th>
-<td align="left" valign="top" colspan="2">1.0
-            ( 26/10/2012 )
-        </td>
-</tr>
-<tr>
-<th align="left" valign="top">Autores</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0001">
-Alexander Restrepo</a>
-<br />
-</li>
-<li>
-<a href="#STK-0002">
-Victor Mario</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Fuentes</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0003">
-Sorey Garcia</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Dependencias</th>
-<td align="left" valign="top" colspan="2">Ninguno</td>
-</tr>
-<tr>
-<th align="left" valign="top">Descripción</th>
-<td colspan="2">
-    El sistema deberá comportarse tal como se describe en el siguiente
-
-    caso de uso cuando
-<em>
-El usuario ingresa un evento al calendario</em>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Precondición</th>
-<td align="left" valign="top" colspan="2">
-crear una cuenta</td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="10">Secuencia normal</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Acción</th>
-</tr>
-<tr>
-<a name="STP-0013" />
-<td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa Persona encargada de todas las responsabilidades de los eventos (usuario operador del telefono movil)">
-Usuario (ACT-0001)
-    </a>
-<em>
-solicita al sistema la creacion de un evento</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0016" />
-<td align="center" valign="top">2</td>
-<td>El
-     
-    sistema<em>
-solicita los detalles del evento </em>
-</td>
-</tr>
-<tr>
-<a name="STP-0017" />
-<td align="center" valign="top">3</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa Persona encargada de todas las responsabilidades de los eventos (usuario operador del telefono movil)">
-Usuario (ACT-0001)
-    </a>
-<em>
-ingresa los detalles del evento 
-<br />
-</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0030" />
-<td align="center" valign="top">4</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa Persona encargada de todas las responsabilidades de los eventos (usuario operador del telefono movil)">
-Usuario (ACT-0001)
-    </a>
-<em>
-espesifica si el valor del evento  es un egreso o un ingreso</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0020" />
-<td align="center" valign="top">5</td>
-<td>El
-     
-    sistema<em>
- solicita la asignacion de una alerta </em>
-</td>
-</tr>
-<tr>
-<a name="STP-0021" />
-<td align="center" valign="top">6</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa Persona encargada de todas las responsabilidades de los eventos (usuario operador del telefono movil)">
-Usuario (ACT-0001)
-    </a>
-<em>
-asigna la  alerta del evento </em>
-</td>
-</tr>
-<tr>
-<a name="STP-0023" />
-<td align="center" valign="top">7</td>
-<td>El
-     
-    sistema<em>
-carga la alerta del evento</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0031" />
-<td align="center" valign="top">8</td>
-<td>El
-     
-    sistema<em>
- valida los detalles del evento </em>
-</td>
-</tr>
-<tr>
-<a name="STP-0022" />
-<td align="center" valign="top">9</td>
-<td>El
-     
-    sistema<em>
-carga los detalles del evento y lo muestra en el calendario</em>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Postcondición</th>
-<td align="left" valign="top" colspan="2">
-El sistema calcula el saldo de la cuenta</td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="3">Excepciones</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Acción</th>
-</tr>
-<tr>
-<a name="STX-0010" />
-<td align="center" valign="top">3</td>
-<td>Si<em>
- ingresa un valor del alfabeto, en el campo" valor",
-                            </em>el
-     
-    sistema<em>
-arrojar un error diciendo (que en este campo solo se admiten datos numericos</em>,
-                            a continuación este caso de uso
-                             
-                            <em>queda sin efecto</em>
-</td>
-</tr>
-<tr>
-<a name="STX-0011" />
-<td align="center" valign="top">8</td>
-<td>Si<em>
-le faltan datos ,
-                            </em>el
-     
-    sistema<em>
-arrojara un mensaje diciendo : no puede continuar hasta que ingrese los datos  completamente.</em>,
-                            a continuación este caso de uso
-                             
-                            <em>queda sin efecto</em>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="5">Rendimiento</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Tiempo máximo</th>
-</tr>
-<tr>
-<td align="center" valign="top">2</td>
-<td>
-5
-
-             
-            año(s)</td>
-</tr>
-<tr>
-<td align="center" valign="top">5</td>
-<td>
-5
-
-             
-            año(s)</td>
-</tr>
-<tr>
-<td align="center" valign="top">7</td>
-<td>
-5
-
-             
-            año(s)</td>
-</tr>
-<tr>
-<td align="center" valign="top">9</td>
-<td>
-5
-
-             
-            año(s)</td>
-</tr>
-<tr>
-<th align="left" valign="top">Frecuencia esperada</th>
-<td colspan="2">
-5
-veces por
-                         
-                        año(s)</td>
-</tr>
-<tr>
-<th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">vital</td>
-</tr>
-<tr>
-<th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">inmediatamente</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">pendiente de validación</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">alta</td>
-</tr>
-<tr>
-<th align="left" valign="top">Comentarios</th>
-<td align="left" valign="top" colspan="2">
-Ninguno</td>
-</tr>
-</table>
-<p />
 <a name="UC-0003" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
@@ -2253,7 +1744,8 @@ valida los detalles de la cuenta </em>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-depues de cargar la cuenta  el sistema solicitara la asignacion de un evento</td>
+depues de cargar la cuenta  el sistema solicitara la asignacion de un <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="3">Excepciones</th>
@@ -2268,7 +1760,7 @@ ingresa un valor del alfabeto en el campo " salario base",
                             </em>el
      
     sistema<em>
-arrojara un mensaje diciendo: que este campo solo  admiten datos numericos. </em>,
+arrojara un mensaje diciendo "solo admiten datos numericos" </em>,
                             a continuación este caso de uso
                              
                             <em>queda sin efecto</em>
@@ -2282,7 +1774,7 @@ falta algun campo por llenar ,
                             </em>el
      
     sistema<em>
-arrojara un mensaje diciendo:  se necesita llenar todos los campos para poder crear la cuenta</em>,
+arrojara un mensaje diciendo  "necesita llenar todos los campos para poder crear la cuenta"</em>,
                             a continuación este caso de uso
                              
                             <em>queda sin efecto</em>
@@ -2332,12 +1824,12 @@ Ninguno</td>
 </tr>
 </table>
 <p />
-<a name="UC-0006" />
+<a name="UC-0004" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
-<th align="left" valign="top">UC-0006</th>
+<th align="left" valign="top">UC-0004</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Calcular estado de cuenta</th>
+Crear Eventos</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -2385,7 +1877,271 @@ Sorey Garcia</a>
 
     caso de uso cuando
 <em>
-El sistema calcula el saldo de la cuenta a partir de los eventos creados</em>
+El usuario ingresa un <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a> al calendario</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+crear una cuenta</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="10">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0013" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa Persona encargada de todas las responsabilidades de los eventos (usuario operador del telefono movil)">
+Usuario (ACT-0001)
+    </a>
+<em>
+solicita al sistema la creacion de un <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>
+</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0016" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+solicita los detalles del <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>
+</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0017" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa Persona encargada de todas las responsabilidades de los eventos (usuario operador del telefono movil)">
+Usuario (ACT-0001)
+    </a>
+<em>
+ingresa los detalles del <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0030" />
+<td align="center" valign="top">4</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa Persona encargada de todas las responsabilidades de los eventos (usuario operador del telefono movil)">
+Usuario (ACT-0001)
+    </a>
+<em>
+espesifica si el valor del <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>  es un egreso o un ingreso</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0020" />
+<td align="center" valign="top">5</td>
+<td>El
+     
+    sistema<em>
+ solicita la asignacion de una alerta </em>
+</td>
+</tr>
+<tr>
+<a name="STP-0021" />
+<td align="center" valign="top">6</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa Persona encargada de todas las responsabilidades de los eventos (usuario operador del telefono movil)">
+Usuario (ACT-0001)
+    </a>
+<em>
+asigna la  alerta del <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>
+</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0023" />
+<td align="center" valign="top">7</td>
+<td>El
+     
+    sistema<em>
+carga la alerta del <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>
+</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0031" />
+<td align="center" valign="top">8</td>
+<td>El
+     
+    sistema<em>
+ valida los detalles del <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>
+</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0022" />
+<td align="center" valign="top">9</td>
+<td>El
+     
+    sistema<em>
+guarda los detalles del <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a> y lo muestra en el calendario</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+El sistema calcula el saldo de la cuenta</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="3">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STX-0010" />
+<td align="center" valign="top">3</td>
+<td>Si<em>
+ ingresa un valor del alfabeto, en el campo" valor",
+                            </em>el
+     
+    sistema<em>
+arroja un error diciendo " este campo solo se admiten datos numericos"</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
+</tr>
+<tr>
+<a name="STX-0011" />
+<td align="center" valign="top">8</td>
+<td>Si<em>
+hacen faltan datos ,
+                            </em>el
+     
+    sistema<em>
+arrojara un mensaje diciendo "no puede continuar hasta que ingrese los datos  completamente"</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="5">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">2</td>
+<td>
+5
+
+             
+            año(s)</td>
+</tr>
+<tr>
+<td align="center" valign="top">5</td>
+<td>
+5
+
+             
+            año(s)</td>
+</tr>
+<tr>
+<td align="center" valign="top">7</td>
+<td>
+5
+
+             
+            año(s)</td>
+</tr>
+<tr>
+<td align="center" valign="top">9</td>
+<td>
+5
+
+             
+            año(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+5
+veces por
+                         
+                        año(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0006</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Lista Eventos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 26/10/2012 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Alexander Restrepo</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Victor Mario</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Sorey Garcia</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+El sistema  muestra los eventos y  calcula el saldo de la cuenta a partir de los eventos creados en el calendario</em>
 </td>
 </tr>
 <tr>
@@ -2394,17 +2150,26 @@ El sistema calcula el saldo de la cuenta a partir de los eventos creados</em>
 el salario a favor sera establecido según el salario base y el rango   establecido en la creacion de  cuenta</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="2">Secuencia normal</th>
+<th align="left" valign="top" rowspan="3">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<a name="STP-0029" />
+<a name="STP-0048" />
 <td align="center" valign="top">1</td>
 <td>El
      
     sistema<em>
-calcula su saldo apartir de los eventos creados</em>
+muestra los eventos diarios programados por el usuario</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0029" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+calcula el saldo de la cuenta a partir de los eventos creados y lo muestra en pantalla</em>
 </td>
 </tr>
 <tr>
@@ -2522,13 +2287,13 @@ Sorey Garcia</a>
 
     caso de uso cuando
 <em>
-desea ver todos los ventos con la  fecha y valor del evento de manera general </em>
+desea ver todos los ventos con la  fecha y valor del <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a> de manera general </em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-por lo menos un evento creado</td>
+por lo menos un <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a> creado</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="5">Secuencia normal</th>
@@ -2542,7 +2307,7 @@ por lo menos un evento creado</td>
 Usuario (ACT-0001)
     </a>
 <em>
-solicitara mostrar vistas </em>
+solicita mostrar todos los eventos</em>
 </td>
 </tr>
 <tr>
@@ -2551,7 +2316,7 @@ solicitara mostrar vistas </em>
 <td>El
      
     sistema<em>
-cargara los eventos existen</em>
+carga los eventos existentes</em>
 </td>
 </tr>
 <tr>
@@ -2561,7 +2326,7 @@ cargara los eventos existen</em>
 Usuario (ACT-0001)
     </a>
 <em>
-escogera el evento que desee ver mas en detalle</em>
+selecciona el <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a> que desee ver con mas detalle</em>
 </td>
 </tr>
 <tr>
@@ -2570,7 +2335,7 @@ escogera el evento que desee ver mas en detalle</em>
 <td>El
      
     sistema<em>
-cargara  la vista  detalles del evento especificado </em>
+carga la vista de detalles del <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a> especificado </em>
 </td>
 </tr>
 <tr>
@@ -2694,7 +2459,7 @@ Consulta de eventos </em>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-tener un evento creado </td>
+tener un <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a> creado </td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="6">Secuencia normal</th>
@@ -2717,7 +2482,7 @@ solita al sistema consultar eventos</em>
 <td>El
      
     sistema<em>
-cargara los eventos existentes hasta la fecha</em>
+carga los eventos existentes hasta la fecha actual</em>
 </td>
 </tr>
 <tr>
@@ -2727,7 +2492,7 @@ cargara los eventos existentes hasta la fecha</em>
 Usuario (ACT-0001)
     </a>
 <em>
-buscar el mes del evento</em>
+busca el mes del <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a> que requiere</em>
                                 (<em>
 solo se puede mirar los eventos pasados tres meses de ahy en adelante los eventos seran borrados automaticmanente.</em>)
                             </td>
@@ -2739,7 +2504,7 @@ solo se puede mirar los eventos pasados tres meses de ahy en adelante los evento
 Usuario (ACT-0001)
     </a>
 <em>
-escogera el evento que desee ver con detalle </em>
+selecciona el <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a> que desee ver con detalle </em>
 </td>
 </tr>
 <tr>
@@ -2748,13 +2513,13 @@ escogera el evento que desee ver con detalle </em>
 <td>El
      
     sistema<em>
-cargara la vista  detalles del evento  especificado</em>
+carga la vista de detalles del <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a> especificado</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-mostrar el evento especificado  por el usuario</td>
+mostrar el <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a> especificado  por el usuario</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -2813,6 +2578,176 @@ Ninguno</td>
 </tr>
 </table>
 <p />
+<a name="UC-0009" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0009</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Alerta</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 12/11/2012 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Alexander Restrepo</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Victor Mario</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Sorey Garcia</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+una alarma se activa segun como se ha confugurado en la creacion de un <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+Confuguarar Detalles del <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="5">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0044" />
+<td align="center" valign="top">1</td>
+<td>El
+     
+    sistema<em>
+valida los detalles del tipo de alerta (fecha, hora, sonido) de un <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0050" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+genera la alerta en pantalla del <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>
+</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0052" />
+<td align="center" valign="top">3</td>
+<td>El
+     
+    sistema<em>
+el usuario aprueba, aplaza o descarta el <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>
+</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0053" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+guarda el estado del <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+calendario <a href="#GLO-0004" title="Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.">evento</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">1</td>
+<td>
+5
+
+             
+            día(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+5
+veces por
+                         
+                        día(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
 <a name="SEC-0007" />
 <h1 align="left">6 
 Diagrama de Flujo</h1><a name="GRF-0001" />
@@ -2825,5 +2760,8 @@ Diagrama de Flujo</h1><a name="GRF-0001" />
 Diagrama de flujo</p>
 <a name="SEC-0004" />
 <h1 align="left">7 
-Glosario</h1></body>
+Glosario</h1><a name="GLO-0004" />
+<p align="left">
+<b> Evento:</b>Es una actividad programada por el usuario, en la cual describe la proyeccion de gastos.</p>
+</body>
 </html>

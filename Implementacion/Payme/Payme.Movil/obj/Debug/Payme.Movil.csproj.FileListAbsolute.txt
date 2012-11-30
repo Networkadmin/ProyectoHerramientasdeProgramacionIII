@@ -27,7 +27,12 @@ C:\Users\TOSHIBA\Documents\Visual Studio 2010\Projects\Payme\Payme.Movil\obj\Deb
 C:\Users\TOSHIBA\Documents\Visual Studio 2010\Projects\Payme\Payme.Movil\obj\Debug\Payme.Movil.dll
 C:\Users\TOSHIBA\Documents\Visual Studio 2010\Projects\Payme\Payme.Movil\obj\Debug\Payme.Movil.pdb
 C:\Users\TOSHIBA\Documents\Visual Studio 2010\Projects\Payme\Payme.Movil\obj\Debug\XapCacheFile.xml
-C:\Users\TOSHIBA\Documents\Visual Studio 2010\Projects\Payme\Payme.Movil\obj\Debug\App.g.cs
-C:\Users\TOSHIBA\Documents\Visual Studio 2010\Projects\Payme\Payme.Movil\obj\Debug\CrearCuenta.g.cs
-C:\Users\TOSHIBA\Documents\Visual Studio 2010\Projects\Payme\Payme.Movil\obj\Debug\MainPage.g.cs
-C:\Users\TOSHIBA\Documents\Visual Studio 2010\Projects\Payme\Payme.Movil\obj\Debug\NuevoEvento.g.cs
+C:\Users\TOSHIBA\Documents\Visual Studio 2010\Projects\Payme\Payme.Movil\Bin\Debug\icons\appbar.check.rest.png
+C:\Users\TOSHIBA\documents\visual studio 2010\Projects\Payme\Payme.Movil\obj\Debug\App.g.cs
+C:\Users\TOSHIBA\documents\visual studio 2010\Projects\Payme\Payme.Movil\obj\Debug\ConsultarEvento.g.cs
+C:\Users\TOSHIBA\documents\visual studio 2010\Projects\Payme\Payme.Movil\obj\Debug\CrearCuenta.g.cs
+C:\Users\TOSHIBA\documents\visual studio 2010\Projects\Payme\Payme.Movil\obj\Debug\EventosDia.g.cs
+C:\Users\TOSHIBA\documents\visual studio 2010\Projects\Payme\Payme.Movil\obj\Debug\MainPage.g.cs
+C:\Users\TOSHIBA\documents\visual studio 2010\Projects\Payme\Payme.Movil\obj\Debug\NuevoEvento.g.cs
+C:\Users\TOSHIBA\documents\visual studio 2010\Projects\Payme\Payme.Movil\obj\Debug\ValidarCuenta.g.cs
+C:\Users\TOSHIBA\documents\visual studio 2010\Projects\Payme\Payme.Movil\Bin\Debug\icons\appbar.feature.search.rest.png
